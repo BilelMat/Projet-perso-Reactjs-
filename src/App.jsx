@@ -1,3 +1,4 @@
+import LoginPage from "./components/pages/LoginPage"
 
 function App(){
 
@@ -7,7 +8,7 @@ function App(){
 
 //rerender
 
-return 
+return <LoginPage/>
 
 }
 export default App
