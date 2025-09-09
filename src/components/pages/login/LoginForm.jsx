@@ -1,29 +1,35 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
-
   //états
-  const [inputValue, setInputValue] = useState("")
-  
+  const [inputValue, setInputValue] = useState("");
+
   //comportements
-  const handleSubmit = (event) => { 
-    event.preventDefault()
-    alert(`Bonjour ${inputValue}`)
-    setInputValue("")
-}
-  const handleChange = (event) => { 
-    setInputValue(event.target.value)
-}
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Bonjour ${inputValue}`);
+    setInputValue("");
+  };
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
   //affichage
   return (
-  
-    <form action="submit" onSubmit={handleSubmit} >
-        <h1>Bienvenue chez nous !</h1><br />
-        <h2>Connectez-vous</h2>
-        <input value={inputValue} onChange={handleChange} type="text" placeholder="Entrez votre prénom" required />
+    <form action="submit" onSubmit={handleSubmit}>
+      <h1>Bienvenue chez nous !</h1>
+      <br />
+      <h2>Connectez-vous</h2>
+      <input
+        value={inputValue}
+        onChange={handleChange}
+        type="text"
+        placeholder="Entrez votre prénom"
+        required
+      />
+      <Link to="/order">
         <button>Accédez à votre espace</button>
+      </Link>
     </form>
-    
-  )
+  );
 }
