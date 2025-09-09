@@ -1,7 +1,9 @@
-import React from 'react'
-
-export default function Bienvenue() {
+export default function OrderPage() {
   return (
-    <div>Bienvenue</div>
-  )
+    <div>
+      <h1>Bonjour</h1>
+      <br />
+      <button>Déconnexion</button>
+    </div>
+  );
 }
