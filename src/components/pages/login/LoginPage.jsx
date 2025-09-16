@@ -1,4 +1,4 @@
-import Logo from "../../usuable cmpnts/Logo";
+import Logo from "../../reusable cmpnts/Logo";
 import LoginForm from "./LoginForm";
 import styled from "styled-components";
 
@@ -18,7 +18,7 @@ const LoginPageStyled = styled.div`
   align-items: center;
   justify-content: center;
 
-  ::before {
+  &::before {
     content: "";
     background: url("/images/login-background.jpg") rgba(0, 0, 0, 0.7);
     background-size: cover;
