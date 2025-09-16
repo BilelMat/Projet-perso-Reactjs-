@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import backgroundimage from "../../../assets/backgroundimage.jpg";
+import { theme } from "../../../theme";
 
 export default function LoginForm() {
   //états
@@ -17,7 +19,7 @@ export default function LoginForm() {
   };
   //affichage
   return (
-    <form action="submit" onSubmit={handleSubmit}>
+    <LoginFormStyled action="submit" onSubmit={handleSubmit}>
       <h1>Bienvenue chez nous !</h1>
       <br />
       <h2>Connectez-vous</h2>
@@ -28,7 +30,11 @@ export default function LoginForm() {
         placeholder="Entrez votre prénom"
         required
       />
-      <button>Accédez à votre espace</button>
-    </form>
+      <button>Accéder à mon espace</button>
+    </LoginFormStyled>
   );
 }
+
+const LoginFormStyled = styled.form`
+  background: green;
+`;
