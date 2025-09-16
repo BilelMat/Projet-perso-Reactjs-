@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import backgroundimage from "../../../assets/backgroundimage.jpg";
 import { theme } from "../../../theme";
 
 export default function LoginForm() {
