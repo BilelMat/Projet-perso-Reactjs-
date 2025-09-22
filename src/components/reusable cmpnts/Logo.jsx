@@ -14,7 +14,6 @@ const LogoStyled = styled.div`
   display: flex;
   align-items: center;
   transform: scale(2.5);
-  border: 1px solid red;
 
   h1 {
     /* display: inline;
