@@ -6,7 +6,6 @@ export default function Navbar({ username }) {
     <NavbarStyled>
       <div className="left-side">left</div>
       <div className="right-side">
-        right
         <h1>Hey, {username} </h1>
         <br />
         <Link to="/">
