@@ -12,8 +12,8 @@ export default function Navbar({ username }) {
 }
 
 const NavbarStyled = styled.nav`
-  background: red;
-  height: 10vh;
+  background: lightblue;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
